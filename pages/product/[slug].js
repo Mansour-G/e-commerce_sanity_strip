@@ -6,11 +6,7 @@ import { client, urlFor } from '../../lib/client'
 import { useStateContext } from '../../context/StateContext'
 
 
-
-
-
-
-const productDetails = ({ product, products }) => {
+const ProductDetails = ({ product, products }) => {
 
   const { image, name, details, price } = product;
   const [index, setIndex] = useState([0])
@@ -85,41 +81,6 @@ const productDetails = ({ product, products }) => {
   )
 }
 
-// export const getStaticPaths = async () => {
-//   const query = `*[_type == "product"]{
-//     slug{
-//       current
-//     }
-//   }
-//   `;
-
-//   const products = await client.fetch(query);
-
-//   const paths = products.map((prouduct) => ({
-//     params: {
-//       slug: prouduct.slug.current
-//     }
-//   }));
-
-
-//   return {
-//     paths,
-//     fallback: 'blocking'
-//   }
-// }
-
-// export const getStaticProps = async ({ params: { slug } }) => {
-//   const query = `*[_type == "product[0]" && slug.current == '${slug}'][0]`;
-//   const productsQuery = '*[_type == "product"]'
-
-//   const product = await client.fetch(query)
-//   const products = await client.fetch(productsQuery)
-
-//   return {
-//     props: { product, products }
-//   }
-// }
-
 export const getStaticPaths = async () => {
   const query = `*[_type == "product"] {
     slug {
@@ -157,4 +118,4 @@ export const getStaticProps = async ({ params: { slug } }) => {
 }
 
 
-export default productDetails 
+export default ProductDetails 
