@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   staticPageGenerationTimeout: 1000,
+  future: { webpack5: true },
 }
 
 module.exports = nextConfig
