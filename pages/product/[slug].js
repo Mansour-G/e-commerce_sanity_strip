@@ -19,6 +19,10 @@ const ProductDetails = ({ product, products }) => {
     setShowCart(true)
   }
 
+//   useEffect(()=>{
+//     setQty(1)
+//  }, [product.slug])
+
 
   return (
     <div>

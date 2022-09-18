@@ -16,6 +16,16 @@ export const StateContext = ({ children }) => {
   let index;
 
 
+  //   const updatedCartItems = cartItems.map((cartProduct) => {
+  //     if (cartProduct._id === product._id) {
+  //         return {
+  //             ...cartProduct,
+  //             quantity: cartProduct.quantity + quantity,
+  //         };
+  //     } else {
+  //         return cartProduct;
+  //     }
+  // });
 
   const onAdd = (product, quantity) => {
     const checkProductInCart = cartItems.find((item) => item._id === product._id);
