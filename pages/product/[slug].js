@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import { Product } from '../../components';
+import { Product } from '../../components/index';
 import { client, urlFor } from '../../lib/client'
 
 import { useStateContext } from '../../context/StateContext'

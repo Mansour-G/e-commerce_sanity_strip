@@ -5,7 +5,7 @@ import {
   Product,
   HeroBanner,
   FooterBanner,
-} from '../components'
+} from '../components/index'
 
 
 const Home = ({ products, bannerData }) => (

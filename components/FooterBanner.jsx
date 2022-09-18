@@ -12,7 +12,7 @@ const FooterBanner = ({
     smallText,
     midText,
     desc,
-    product,
+    Product,
     buttonText,
     // productImage,
     image,
